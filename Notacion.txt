@@ -1,0 +1,44 @@
+Notacion 
+//at = atributos
+//pk = primary key no puede repetirse
+
+tabla Profesor 
+
+Nombre del Profesor /at
+Apellido del profesor /at
+cedula /pk
+materia que impartiras  /at
+horario a asignar  /at 
+
+un profesor puede dar clase por la mañana y tarde
+
+
+
+
+
+tabla colegio 
+
+aulas /pk
+horario /at / por horas lunes a sabado  
+materias /at 
+
+// Tandas mañana o tarde
+		de 8 a 11 
+		de 11 a 1
+		de 4 a 6
+		de 2 a 6 
+
+
+Para que un profesor no choque con otro profesor en un x dia a una x hora igual 
+	Si x profesor == lunes && x profesor == tdm1 && x profesor == aul1 && x profesor ==mt1
+		entonces  n  profesor no puede ser igual que la primera condicion
+
+Imprimir el resultado de un profesor de cuanta materia y en que horario y aula imparte 
+
+
+
+lOS profesores tendra un usuario, sera un codigo para acceder a sus horarios y datos 
+no podran modificarlo despues de la primera vez. para poder imprimirlo. 
+
+dara mas de una materia y no podra chocar con otra 
+	
