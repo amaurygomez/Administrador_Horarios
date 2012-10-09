@@ -4,7 +4,7 @@
  */
 package controladores;
 
-import modelos.Profesor;
+
 import vistas.Agregar_Profesor;
 
 /**
@@ -38,7 +38,7 @@ public class Cr_Profesor {
 
     @Override
     public boolean equals(Object obj) {
-        if (obj instanceof Profesor){
+        if (obj instanceof Cr_Profesor){
             Cr_Profesor teach = ( Cr_Profesor) obj;
             if (nombre.equalsIgnoreCase(teach.getNombre())){
                 return true;
