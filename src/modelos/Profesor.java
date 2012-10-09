@@ -5,6 +5,7 @@
 package modelos;
 
 import controladores.Cr_Profesor;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import sun.tools.jar.resources.jar;
 import vistas.Agregar_Profesor;
@@ -21,7 +22,7 @@ public class Profesor extends IModel{
    private String apellido;
    private String cedula;
    private String telefono;
-    
+   public ArrayList<Profesor> Profesores  ; 
     
 
   Profesor(String nombre,String cedula,String telefono){
@@ -35,7 +36,13 @@ public class Profesor extends IModel{
         
     }
 
+ 
+ 
+
+
     
+   
+
   
 
     @Override

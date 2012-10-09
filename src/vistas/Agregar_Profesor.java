@@ -6,6 +6,7 @@ package vistas;
 
 import controladores.Cr_Profesor;
 import modelos.Profesor;
+import modelos.Recursos;
 
 /**
  *
@@ -187,13 +188,15 @@ public class Agregar_Profesor extends javax.swing.JFrame {
     p.setApellido(apellido);
     p.setCedula(cedula);
     p.setTelefono(telefono);
+    
+    
+  System.out.println(p.getNombre());
+  System.out.println(p.getApellido());
+  System.out.println(p.getCedula());
+  System.out.println(p.getTelefono());
 
- System.out.println(p.getNombre());
- System.out.println(p.getApellido());
- System.out.println(p.getCedula());
- System.out.println(p.getTelefono());
-    //Hacer lo que vayas a hacer con el profedor nuevo
-    //Ej: Agregarlo a una listo
+
+    
     
         // TODO add your handling code here:
     }//GEN-LAST:event_jToggleButton1ActionPerformed

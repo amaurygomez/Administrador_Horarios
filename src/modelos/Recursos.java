@@ -4,6 +4,7 @@
  */
 package modelos;
 
+
 import java.util.ArrayList;
 
 
@@ -15,10 +16,5 @@ public class Recursos {
  
 
 
-public static void  entrar(){
-   ArrayList<Profesor> Profesores ;
-ArrayList<Materia> Materias ;
 
-
-}
 }
