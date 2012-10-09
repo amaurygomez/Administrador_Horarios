@@ -82,6 +82,11 @@ public class Agregar_Profesor extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         jToggleButton1.setText("Agregar Profesor");
+        jToggleButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jToggleButton1MouseClicked(evt);
+            }
+        });
         jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jToggleButton1ActionPerformed(evt);
@@ -172,6 +177,10 @@ public class Agregar_Profesor extends javax.swing.JFrame {
        
         // TODO add your handling code here:
     }//GEN-LAST:event_jToggleButton1ActionPerformed
+
+    private void jToggleButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton1MouseClicked
+        Profesor.agregar();        // TODO add your handling code here:
+    }//GEN-LAST:event_jToggleButton1MouseClicked
 
     /**
      * @param args the command line arguments
