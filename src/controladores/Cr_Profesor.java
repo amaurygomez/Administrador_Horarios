@@ -28,6 +28,10 @@ public class Cr_Profesor {
   this.telefono = telefono;
  }
 
+    public Cr_Profesor() {
+        
+    }
+
     
   
 
