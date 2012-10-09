@@ -174,12 +174,32 @@ public class Agregar_Profesor extends javax.swing.JFrame {
     }//GEN-LAST:event_nm1ActionPerformed
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-       
+
+    String nombre = this.getNm1().getText();
+    String apellido = this.getAp1().getText();
+    String cedula = this.getCd1().getText();
+    String telefono = this.getTf1().getText();
+
+
+    Profesor p = new Profesor();
+    
+    p.setNombre(nombre);
+    p.setApellido(apellido);
+    p.setCedula(cedula);
+    p.setTelefono(telefono);
+
+ System.out.println(p.getNombre());
+ System.out.println(p.getApellido());
+ System.out.println(p.getCedula());
+ System.out.println(p.getTelefono());
+    //Hacer lo que vayas a hacer con el profedor nuevo
+    //Ej: Agregarlo a una listo
+    
         // TODO add your handling code here:
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     private void jToggleButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton1MouseClicked
-        Cr_Profesor.agregar();        // TODO add your handling code here:
+                // TODO add your handling code here:
     }//GEN-LAST:event_jToggleButton1MouseClicked
 
     /**
