@@ -21,7 +21,7 @@ public class Cr_Profesor {
     
     
 
-  Cr_Profesor(String nombre,String tandaIngresada,int creditosIngresado){
+  Cr_Profesor(String nombre,String cedula,String telefono){
   this.nombre = nombre;
   this.apellido = apellido;
   this.cedula = cedula;
