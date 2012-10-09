@@ -4,6 +4,8 @@
  */
 package modelos;
 
+import controladores.Cr_Aula;
+
 /**
  *
  * @author Amaury Gomez
@@ -11,16 +13,31 @@ package modelos;
 public class Aula extends IModel{
     
 
-    private String ubicacion;
+   private String ubicacion;
 
-    /**
-     * @return the id
-     */
-   
-    /**
-     * @param id the id to set
-     */
-    
+
+  Aula(String ubicacion){
+  
+        this.ubicacion = ubicacion;
+ }
+
+
+
+    @Override
+    public int hashCode() {
+        return getUbicacion().hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Aula){
+           Cr_Aula aula =(Cr_Aula) obj;
+           if (aula.getUbicacion().equalsIgnoreCase(ubicacion)){
+               return true;
+           }
+        }
+        return false;
+    }
 
     /**
      * @return the ubicacion

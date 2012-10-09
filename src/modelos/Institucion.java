@@ -19,7 +19,7 @@ public class Institucion  {
     ArrayList<Profesor> profesores= new ArrayList<Profesor>();
     
     Cr_Materia crm = new Cr_Materia();
-    crm.test();
+    
     
     
     

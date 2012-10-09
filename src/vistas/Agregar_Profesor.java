@@ -179,7 +179,7 @@ public class Agregar_Profesor extends javax.swing.JFrame {
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     private void jToggleButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton1MouseClicked
-        Profesor.agregar();        // TODO add your handling code here:
+        Cr_Profesor.agregar();        // TODO add your handling code here:
     }//GEN-LAST:event_jToggleButton1MouseClicked
 
     /**

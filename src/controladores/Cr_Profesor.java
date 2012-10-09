@@ -13,101 +13,27 @@ import vistas.Agregar_Profesor;
  */
 public class Cr_Profesor {
     
-    
-   private String nombre;
-   private String apellido;
-   private String cedula;
-   private String telefono;
-    
-    
-
-  Cr_Profesor(String nombre,String cedula,String telefono){
-  this.nombre = nombre;
-  this.apellido = apellido;
-  this.cedula = cedula;
-  this.telefono = telefono;
- }
-
-    public Cr_Profesor() {
+   
+  public static void agregar(){
+         Cr_Profesor crp = new Cr_Profesor();
+         Agregar_Profesor agp = new Agregar_Profesor();
         
-    }
-
-    
-  
-
-    @Override
-    public int hashCode() {
-        return getNombre().hashCode();
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (obj instanceof Cr_Profesor){
-            Cr_Profesor teach = ( Cr_Profesor) obj;
-            if (nombre.equalsIgnoreCase(teach.getNombre())){
-                return true;
-            }
-        }
-        return false;
-    }
+    String nombre = agp.getNm1().getText();
+    String apellido = agp.getAp1().getText();
+    String cedula = agp.getCd1().getText();
+    String telefono = agp.getTf1().getText();
     
     
-
-    /**
-     * @return the nombre
-     */
-    public String getNombre() {
-        return nombre;
+    
+    String nombre2 = nombre;
+    String apellido2 = apellido;
+    String cedula2 = cedula;
+    String telefono2 = telefono;
+   System.out.println(nombre2);
+   System.out.println(apellido2);
+   System.out.println(cedula2);
+   System.out.println(telefono2);
+   
     }
-
-    /**
-     * @param nombre the nombre to set
-     */
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    /**
-     * @return the apellido
-     */
-    public String getApellido() {
-        return apellido;
-    }
-
-    /**
-     * @param apellido the apellido to set
-     */
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
-    /**
-     * @return the cedula
-     */
-    public String getCedula() {
-        return cedula;
-    }
-
-    /**
-     * @param cedula the cedula to set
-     */
-    public void setCedula(String cedula) {
-        this.cedula = cedula;
-    }
-
-    /**
-     * @return the telefono
-     */
-    public String getTelefono() {
-        return telefono;
-    }
-
-    /**
-     * @param telefono the telefono to set
-     */
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
-
 }
 

@@ -22,14 +22,7 @@ public class Cr_Materia extends IModel{
     
     
     
-    public static void test(){
-    Materia mt = new Materia();
-    
-    ArrayList<String> materias = new ArrayList<String>();
-    materias.add(mt.getNombre());
-    
-    System.out.println(materias);
-    }
+
 
    
     
